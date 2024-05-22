@@ -1,0 +1,39 @@
+﻿<Window x:Class="AuthorizationApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AuthorizationApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" WindowStartupLocation="CenterScreen">
+    <Grid>
+        
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.2*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Главное окно" HorizontalAlignment="Center"
+               Grid.ColumnSpan="2"/>
+        <ListBox Name="productList"
+                 Margin="0 50 0 0"
+                 Grid.Column="2"
+                 SelectionChanged="selectItem_Changed">
+           
+        </ListBox>
+        <StackPanel  Margin="0 50 0 0">
+            <Button x:Name="btnUser"
+                    Margin="10 50"
+                    Content="Клиенты"
+                    Click="btnUser_ButtonClick"/>
+            <Button x:Name="btnStaff"
+                    Margin="10 50"
+                    Content="Товар"
+                    Click="btnStaff_ButtonClick"/>
+            <Button x:Name="btnExit"
+                    Margin="10 50"
+                    Content="Выход"
+                    Click="btnExit_ButtonClick"/>
+        </StackPanel>
+    </Grid>
+</Window>

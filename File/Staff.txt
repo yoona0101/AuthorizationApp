@@ -1,0 +1,4 @@
+﻿Apple;100
+Banana;32
+Cucumber;65
+Fish;21
